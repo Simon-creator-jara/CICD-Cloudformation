@@ -2,6 +2,8 @@ AWSTemplateFormatVersion: '2010-09-09'
 Parameters:
     s3ARN:
         Type: String
+    Rolename:
+        Type: String
 Resources:
   CodePipelineRole:
     Type: AWS::IAM::Role
@@ -27,3 +29,4 @@ Resources:
                 Resource: 
                   - !Ref s3ARN
                   - !Join [ "", [ !Ref s3ARN, "/*" ] ]
+      RoleName:  !Ref Rolename

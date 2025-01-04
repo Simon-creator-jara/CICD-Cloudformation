@@ -14,11 +14,11 @@ Resources:
               SSEAlgorithm: "AES256"
       BucketName: !Ref s3Name
 Outputs:
-  DynamoPlatzi:
+  s3name:
       Value: !Ref rs3
       Export:
         Name: s3artifacts
-  DynamoPlatziArn:
+  s3arn:
       Value: !GetAtt rs3.Arn
       Export:
         Name: s3artifactsArn
