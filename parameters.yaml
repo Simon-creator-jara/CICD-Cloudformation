@@ -1,5 +1,5 @@
 template-file-path: master.yaml
 parameters:
   s3Name: demosimonpipeline
-  Rolename: demopipeline
+  Rname: demopipeline
 tags: {}
