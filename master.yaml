@@ -11,12 +11,12 @@ Metadata:
                 Label:
                     default: 'Role codepipeline'
                 Parameters:
-                    - Rolename
+                    - Rname
 
         ParameterLabels:
             s3Name:
                 default: 'Ingrese el nombre del bucket'
-            Rolename:
+            Rname:
                 default: 'Ingrese el nombre del role de IAM'
 
 Parameters:
