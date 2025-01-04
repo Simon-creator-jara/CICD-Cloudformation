@@ -1,0 +1,5 @@
+template-file-path: master.yaml
+parameters:
+  s3Name: demo
+  Rolename: demo
+tags: {}
