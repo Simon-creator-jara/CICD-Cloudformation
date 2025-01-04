@@ -14,11 +14,11 @@ Resources:
               SSEAlgorithm: "AES256"
       BucketName: !Ref s3Name
 Outputs:
-  s3name:
+  s3artifacts:
       Value: !Ref rs3
       Export:
         Name: s3artifacts
-  s3arn:
+  s3artifactsArn:
       Value: !GetAtt rs3.Arn
       Export:
         Name: s3artifactsArn

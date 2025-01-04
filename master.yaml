@@ -23,7 +23,7 @@ Parameters:
     s3Name:
         Description: Nombre
         Type: String
-    Rolename:
+    Rname:
         Description: Llave
         Type: String
      
@@ -39,4 +39,5 @@ Resources:
         Properties:
             TemplateURL: https://raw.githubusercontent.com/Simon-creator-jara/CICD-Cloudformation/refs/heads/main/iam.yaml
             Parameters:
-                s3ARN: !GetAtt s3.Outputs.s3artifactsArn       
+                s3ARN: !GetAtt s3.Outputs.s3artifactsArn    
+                Rname: !Ref Rname

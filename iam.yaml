@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Parameters:
     s3ARN:
         Type: String
-    Rolename:
+    Rname:
         Type: String
 Resources:
   CodePipelineRole:
@@ -29,4 +29,4 @@ Resources:
                 Resource: 
                   - !Ref s3ARN
                   - !Join [ "", [ !Ref s3ARN, "/*" ] ]
-      RoleName:  !Ref Rolename
+      RoleName:  !Ref Rname
