@@ -1,5 +1,0 @@
-template-file-path: parameters.yaml
-parameters:
-  s3Name: demopipeline
-  Rolename: demopipeline
-tags: {}
