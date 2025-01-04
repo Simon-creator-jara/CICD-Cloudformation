@@ -31,13 +31,13 @@ Resources:
     s3:
         Type: "AWS::CloudFormation::Stack"
         Properties:
-            TemplateURL: https://raw.githubusercontent.com/Simon-creator-jara/CICD-Cloudformation/refs/heads/main/s3.yaml
+            TemplateURL: https://demopipelinesimon.s3.us-east-1.amazonaws.com/s3.yaml
             Parameters:
                 s3Name: !Ref s3Name
     iam:
         Type: "AWS::CloudFormation::Stack"
         Properties:
-            TemplateURL: https://raw.githubusercontent.com/Simon-creator-jara/CICD-Cloudformation/refs/heads/main/iam.yaml
+            TemplateURL: https://demopipelinesimon.s3.us-east-1.amazonaws.com/iam.yaml
             Parameters:
                 s3ARN: !GetAtt s3.Outputs.s3artifactsArn    
                 Rname: !Ref Rname
